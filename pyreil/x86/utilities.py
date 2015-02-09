@@ -14,14 +14,13 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.x86.utilities - x86 and x86_64 translation utility functions.
+"""pyreil.x86.utilities - x86 and x86_64 translation utility functions.
 
 This module contains all the silly little utility functions that didn't
 belong anywhere else.
 """
 
-import reil.definitions as reil
-from reil.shorthand import *
+from pyreil.shorthand import *
 
 def carry_bit(size):
     """The mask required for the carry bit on a computation with a

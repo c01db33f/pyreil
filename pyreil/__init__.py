@@ -14,16 +14,16 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.x86 - x86 and x86_64 translators
+"""
+pyreil
 
 This module generates REIL (reverse engineering intermediate language)
-IL from x86 and x86_64 machine code.
+IL for a number of different processor architectures, to enable the
+development of various program analysis tools.
 
 .. REIL language specification:
     http://www.zynamics.com/binnavi/manual/html/reil_language.htm
-
-.. x86 and x86_64 instruction set reference:
-    http://www.intel.com/content/dam/www/public/us/en/documents/manuals
-    /64-ia-32-architectures-software-developer-instruction-set-reference
-    -manual-325383.pdf
 """
+
+from pyreil import x86
+from pyreil import native

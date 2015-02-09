@@ -14,7 +14,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.x86.sse - x86 and x86_64 translators
+"""pyreil.x86.sse - x86 and x86_64 translators
 
 This module generates REIL (reverse engineering intermediate language)
 IL from x86 and x86_64 machine code.
@@ -26,17 +26,16 @@ the streaming-simd extensions
 
 import capstone
 
-import reil.native as native
-import reil.definitions as reil
-from reil.shorthand import *
+import pyreil.native as native
+from pyreil.shorthand import *
 
-import reil.x86.arithmetic as arithmetic
-import reil.x86.bitwise as bitwise
-import reil.x86.control_flow as control_flow
-import reil.x86.logic as logic
-import reil.x86.memory as memory
-import reil.x86.misc as misc
-import reil.x86.sse as sse
+from pyreil.x86 import arithmetic
+from pyreil.x86 import bitwise
+from pyreil.x86 import control_flow
+from pyreil.x86 import logic
+from pyreil.x86 import memory
+from pyreil.x86 import misc
+from pyreil.x86 import sse
 
 
 opcode_handlers = {
