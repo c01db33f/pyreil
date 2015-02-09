@@ -14,7 +14,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.native
+"""pyreil.native
 
 This module contains the basic definitions for the native instructions
 produced by this library.

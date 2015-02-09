@@ -22,7 +22,7 @@ IL from x86 and x86_64 machine code.
 This file contains helpers for x86 conditional instructions
 """
 
-from reil.shorthand import *
+from pyreil.shorthand import *
 
 A    = 0
 AE   = 1

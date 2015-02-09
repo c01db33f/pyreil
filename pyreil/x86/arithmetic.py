@@ -14,7 +14,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.x86.arithmetic - x86 and x86_64 translators
+"""pyreil.x86.arithmetic - x86 and x86_64 translators
 
 This module generates REIL (reverse engineering intermediate language)
 IL from x86 and x86_64 machine code.
@@ -23,13 +23,11 @@ This file is responsible for translation of basic arithmetic instructions
 such as add, mul, div
 """
 
-import reil.error
-from reil.shorthand import *
+from pyreil.shorthand import *
 
-import reil.x86.conditional as conditional
-import reil.x86.operand as operand
-from reil.x86.utilities import *
-
+from pyreil.x86 import operand
+from pyreil.x86 import conditional
+from pyreil.x86.utilities import *
 
 # Helpers
 

@@ -14,7 +14,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.x86.bitwise - x86 and x86_64 translators
+"""pyreil.x86.bitwise - x86 and x86_64 translators
 
 This module generates REIL (reverse engineering intermediate language)
 IL from x86 and x86_64 machine code.
@@ -23,16 +23,15 @@ This file is responsible for translation of basic instructions that are
 all about twiddling bits and bytes
 """
 
+
 import capstone
 import capstone.x86
 
-import reil
-import reil.error
-from reil.shorthand import *
+from pyreil.shorthand import *
 
-import reil.x86.conditional as conditional
-import reil.x86.operand as operand
-from reil.x86.utilities import *
+from pyreil.x86 import operand
+from pyreil.x86 import conditional
+from pyreil.x86.utilities import *
 
 
 def _shift_set_flags(ctx, result):

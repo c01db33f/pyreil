@@ -14,18 +14,18 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
+"""pyreil.x86 - x86 and x86_64 translators
+
+This module generates REIL (reverse engineering intermediate language)
+IL from x86 and x86_64 machine code.
+
+.. REIL language specification:
+    http://www.zynamics.com/binnavi/manual/html/reil_language.htm
+
+.. x86 and x86_64 instruction set reference:
+    http://www.intel.com/content/dam/www/public/us/en/documents/manuals
+    /64-ia-32-architectures-software-developer-instruction-set-reference
+    -manual-325383.pdf
 """
-reil.error
 
-This module contains exception definitions for various generic error
-conditions that can occur during translation.
-"""
-
-# TODO: better, less generic error types...
-
-class TranslationError(Exception):
-    pass
-
-
-class IllegalInstruction(Exception):
-    pass
+from pyreil.x86.translator import translate

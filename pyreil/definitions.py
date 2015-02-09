@@ -14,7 +14,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.definitions
+"""pyreil.definitions
 
 This module contains the basic definitions for the REIL instructions
 that are used by this library.

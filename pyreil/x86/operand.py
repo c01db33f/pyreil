@@ -14,7 +14,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.x86.operands - x86 and x86_64 translators
+"""pyreil.x86.operands - x86 and x86_64 translators
 
 This module generates REIL (reverse engineering intermediate language)
 IL from x86 and x86_64 machine code.
@@ -25,11 +25,10 @@ operands.
 
 import capstone
 
-from reil.error import *
-from reil.shorthand import *
+from pyreil.error import *
+from pyreil.shorthand import *
 
-from reil.x86.utilities import *
-
+from pyreil.x86.utilities import *
 
 def _memory_address(ctx, i, opnd):
 

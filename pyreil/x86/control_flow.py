@@ -14,7 +14,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.x86.control_flow - x86 and x86_64 translators
+"""pyreil.x86.control_flow - x86 and x86_64 translators
 
 This module generates REIL (reverse engineering intermediate language)
 IL from x86 and x86_64 machine code.
@@ -23,10 +23,12 @@ This file is responsible for translation of control flow instructions
 such as call, jmp and ret.
 """
 
-import reil.x86.conditional as conditional
-import reil.x86.operand as operand
 
-from reil.shorthand import *
+from pyreil.shorthand import *
+
+from pyreil.x86 import operand
+from pyreil.x86 import conditional
+
 
 # Helpers
 

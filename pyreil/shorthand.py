@@ -14,14 +14,14 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-"""reil.shorthand
+"""pyreil.shorthand
 
 This module contains shorthand functions for creating various REIL
 instructions and operands.
 """
 
 
-import reil.definitions as reil
+import pyreil.definitions as reil
 
 
 def imm(value, size):

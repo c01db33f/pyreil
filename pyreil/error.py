@@ -15,14 +15,17 @@
 #    limitations under the License.
 
 """
-pyreil
+pyreil.error
 
-This module generates REIL (reverse engineering intermediate language)
-IL for a number of different processor architectures, to enable the
-development of various program analysis tools.
-
-.. REIL language specification:
-    http://www.zynamics.com/binnavi/manual/html/reil_language.htm
+This module contains exception definitions for various generic error
+conditions that can occur during translation.
 """
 
-from reil.definitions import *
+# TODO: better, less generic error types...
+
+class TranslationError(Exception):
+    pass
+
+
+class IllegalInstruction(Exception):
+    pass
